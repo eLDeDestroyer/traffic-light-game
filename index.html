@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #board {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url('./assets/map.png');
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        .car {
+            position: absolute;
+            background-size: cover;
+            background-position: center;
+            pointer-events: none;
+        }
+
+        .traffic {
+            background-position: center;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="board"></div>
+    <script src="script.js"></script>  
+</body>
+</html>
