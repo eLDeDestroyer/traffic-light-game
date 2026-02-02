@@ -51,9 +51,9 @@ let bottomX = (boardWidth / 2) - (carWidth / 2) - 45
 let bottomY = boardHeight - carHeight
 
 let carsImage = [
-    "./assets/car_1.png",
-    "./assets/car_2.png",
-    "./assets/car_3.png"
+    "./assetss/car_1.png",
+    "./assetss/car_2.png",
+    "./assetss/car_3.png"
 ]
 
 let deg = [0, 90, 180, 270]
@@ -291,7 +291,7 @@ class Trafic {
         this.traffic.style.position = "absolute"
         this.traffic.style.width = this.width + "px"
         this.traffic.style.height = this.height + "px"
-        this.traffic.style.backgroundImage = `url(./assets/green.png)`
+        this.traffic.style.backgroundImage = `url(./assetss/green.png)`
         this.traffic.style.backgroundSize = "contain"
         this.traffic.style.backgroundRepeat = "no-repeat"
         this.traffic.style.backgroundPosition = "center"
@@ -306,20 +306,20 @@ class Trafic {
     }
 
     changeLightFunc(){
-        this.traffic.style.backgroundImage = `url(./assets/yellow.png)`
+        this.traffic.style.backgroundImage = `url(./assetss/yellow.png)`
             switch(this.light){
                 case 1:
                     this.light = 2
                     setTimeout(() => {
                         this.light = 3
-                        this.traffic.style.backgroundImage = `url(./assets/red.png)`
+                        this.traffic.style.backgroundImage = `url(./assetss/red.png)`
                     }, 500)
                     break
                 case 3:
                     this.light = 2
                     setTimeout(() => {
                     this.light = 1
-                    this.traffic.style.backgroundImage = `url(./assets/green.png)`
+                    this.traffic.style.backgroundImage = `url(./assetss/green.png)`
                     }, 500)
 
                     break
